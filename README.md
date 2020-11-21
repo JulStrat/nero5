@@ -12,4 +12,4 @@ The program has been retouched by Roland Chastain, to be compilable with the Fre
 
 Delphi [SDL_bgi](http://libxbgi.sourceforge.net) port created by I. Kakoulidis.
 
-<img src="https://github.com/JulStrat/nero5/blob/master/delphi/NERO5.PNG">
+<img src="https://github.com/JulStrat/nero5/blob/main/delphi/NERO5.PNG">
