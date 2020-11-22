@@ -10,6 +10,6 @@ The original program was written for the Turbo Pascal compiler and the DOS opera
 
 The program has been retouched by Roland Chastain, to be compilable with the Free Pascal compiler, and executable on Linux and on Windows.
 
-Delphi [SDL_bgi](http://libxbgi.sourceforge.net) port created by I. Kakoulidis.
+Delphi Windows port created by I. Kakoulidis.
 
 <img src="https://github.com/JulStrat/nero5/blob/main/delphi/NERO5.PNG">

@@ -2077,7 +2077,7 @@ begin
         ch := readkey;
       *)  
 
-(* DELPHI TO DO
+(* DELPHI TO DO - Load / Save game 
       if (ch in ['l', 'L']) then
       begin
         empty_movelist;
@@ -2182,7 +2182,7 @@ begin
         Close(posf);
       end;
 *)
-      (* KEY_F4 *)
+      (* KEY_F4 - Sound On/Off *)
       if (ch = KEY_F4) then
       begin
         soundon := (not soundon);
@@ -2193,7 +2193,7 @@ begin
           nosound;
         end;
       end;
-      (* KEY_F5 *)      
+      (* KEY_F5 - View score *)      
       if (ch = KEY_F5) then
       begin
         viewscores := (not viewscores);
@@ -2203,13 +2203,13 @@ begin
           setcolor(black);
         outtextxy(5, 300, lstr);
       end;
-      (* KEY_F3 *)      
+      (* KEY_F3 - Turn board *)      
       if (ch = KEY_F3) then
         turn_board;
-      (* KEY_F7 *)        
+      (* KEY_F7 - Square colors *)        
       if (ch = KEY_F7) then
         setsqc;
-      (* KEY_F8 *)        
+      (* KEY_F8 - Two player analysis *)        
       if (ch = KEY_F8) then
       begin
         viewscores := True;
@@ -2244,10 +2244,10 @@ begin
         writeln(gamef, ' ');
       end;
 
-      (* KEY_F6 *)
+      (* KEY_F6 - Setup board *)
       if (ch = KEY_F6) then
         set_initial_pos(True);
-      (* KEY_F2 *)        
+      (* KEY_F2 - Make move *)        
       if (ch = KEY_F2) then
       begin
         playeriswhite := (not playeriswhite);
@@ -2289,13 +2289,13 @@ begin
           nosound;
         end;
       end;
-      (* TO DO
-      if (ch = '+') then
+
+      if (ch = KEY_KP_PLUS) then
         add_movetime;
-      if (ch = '-') then
+      if (ch = KEY_KP_MINUS) then
         subtract_time;
-      *)  
-    (* 59 F1, 27 ESC *)    
+
+    (* F1 - New game, 27 - ESC *)    
     until (ch = KEY_F1) or (ch = KEY_ESC)
   until (ch = KEY_ESC);
   writeln(gamef, ' ');
