@@ -6,9 +6,8 @@
 
 ## Build
 
-`dcc64 -B -NSSystem NERO5.PAS`
+From command line - `dcc64 -B -NSSystem NERO5.PAS`
 
 ## TO DO
 
-1. Load/Save game.
-2. Setup board (Key - F6).
+1. Setup board (Key - F6).
